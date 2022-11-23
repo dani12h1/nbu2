@@ -1,0 +1,219 @@
+#filtrering .valgt {
+  color: #ee7520;
+}
+
+.gruppe1,
+.gruppe2,
+.gruppe3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-inline: 17px;
+}
+
+.logo1,
+.logo2,
+.logo3 {
+  max-width: 50px;
+  margin-top: 25px;
+}
+
+.h3_1,
+.h3_2,
+.h3_3 {
+  margin: 0;
+  margin-left: 28.2%;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-family: "Bebas Neue", cursive;
+  margin-left: 20px;
+  font-size: 2.5rem;
+  color: #484a4d;
+}
+
+.tilmeld {
+  /* margin: auto; */
+  width: 165%;
+  padding: 17px;
+  margin-bottom: 30px;
+  border-radius: 0px;
+}
+
+.tilmeld button {
+  background-color: #1b5a2a;
+  color: white;
+  cursor: pointer;
+  height: 50px;
+  width: 17%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/*  filtrering knap fodbold side */
+#filtrering button {
+  text-decoration: none;
+  background-color: white;
+  border: solid 2px;
+  padding: 10px;
+  color: #484a4d;
+  margin-inline: 3px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+#filtrering {
+  text-align: center;
+  font-size: 130%;
+}
+
+.holdtype {
+  font-size: 35px;
+  font-family: "Bebas Neue", cursive;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.h1_fodbold {
+  font-size: 80px;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  color: #1b5a2a;
+}
+
+.h2_fodbold {
+  font-size: 35px;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  color: #484a4d;
+}
+
+/* icon/pil forside */
+i.fas.fa-arrow-down::before {
+  margin-bottom: 20px;
+  animation-name: pil;
+  animation-timing-function: linear;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+  margin-left: auto;
+  margin-right: auto;
+}
+@keyframes pil {
+  0% {
+    transform: translateY(3px);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(3px);
+  }
+}
+
+/* desktop */
+@media (min-width: 800px) {
+  .logo1,
+  .logo2,
+  .logo3 {
+    max-width: 100px;
+    margin-top: 25px;
+  }
+
+  .gruppe1,
+  .gruppe2,
+  .gruppe3 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-left: 4%;
+    margin-bottom: 75px;
+    margin-right: 450px;
+  }
+
+  .tekst1,
+  .tekst2,
+  .tekst3 {
+    border-left: solid 2px;
+    color: black;
+    padding-left: 35px;
+    color: #484a4d;
+  }
+
+  .tilmeld {
+    margin-bottom: 30px;
+    margin-left: 6%;
+    width: 48%;
+  }
+
+  .h3_1,
+  .h3_2,
+  .h3_3 {
+    margin-inline: 23.7%;
+    padding-bottom: 5px;
+    font-family: "Bebas Neue", cursive;
+    font-size: 25px;
+    color: #484a4d;
+  }
+
+  #filtrering button {
+    text-decoration: none;
+    background-color: white;
+    padding: 10px;
+    color: #484a4d;
+    margin-inline: 20px;
+    cursor: pointer;
+    width: 9%;
+    font-size: 2rem;
+  }
+
+  #filtrering button:hover {
+    transform: scale(0.98);
+    color: #ee7520;
+  }
+
+  #filtrering {
+    text-align: center;
+  }
+
+  .grid {
+    margin-top: 50px;
+  }
+
+  .holdtype {
+    font-size: 45px;
+    font-family: "Bebas Neue", cursive;
+    margin-left: 7%;
+  }
+
+  .h1_fodbold {
+    font-size: 80px;
+    font-family: "Bebas Neue", cursive;
+    text-align: center;
+    color: #1b5a2a;
+  }
+
+  .h2_fodbold {
+    font-size: 35px;
+    font-family: "Bebas Neue", cursive;
+    text-align: center;
+    color: #484a4d;
+  }
+
+  .tilmeld button {
+    background-color: #1b5a2a;
+    color: white;
+    cursor: pointer;
+    height: 50px;
+    width: 22%;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  /* pil forside */
+  .elementor-icon i:before,
+  .elementor-icon svg:before {
+    padding-top: 280px;
+    width: 30px;
+  }
+
+  #filtrering .valgt {
+    color: #ee7520;
+  }
+}
